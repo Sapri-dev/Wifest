@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Tabs from './components/Tabs';
 import SearchFilter from './components/SearchFilter';
 import PosterSlider from './components/PosterSlider';
+import EventTimeline from './components/EventTimeline';
 import { BadmintonCard, MLBBCard, DanceCard, CosplayCard } from './components/cards/AllCards';
 import Modal from './components/Modal';
 import { useGoogleSheet } from './hooks/useGoogleSheet';
@@ -53,6 +54,7 @@ const App = () => {
     <div className="app-container">
       <Hero data={data} loading={loading} />
       <PosterSlider />
+      <EventTimeline />
 
       <main className="main-content">
         <Tabs activeTab={activeTab} setTab={changeTab} data={data} />
